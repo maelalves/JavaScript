@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<title>Calculo pagar jantar</title>
+<script>
+    //le valor do jantar.
+    var jantar = Number(prompt("Valor do Jantar R$: "));
+    //le valor do consumo de bebida
+    var bebida = Number(prompt("Consumo de bebida R$: "));
+    //define o valor de consumo total
+    var consumo = jantar + bebida;
+    //define a taxa do garçom em cima do consumo total
+    var garcom = consumo * 0.10;
+    //faz o calculo total do consumo + a taxa do garçom
+    var total = consumo + garcom;
+     //saida do total
+     alert("Jantar R$: " + jantar.toFixed(2) + "\nBebida R$: " + bebida.toFixed(2) + "\nGarçom R$: " + garcom.toFixed(2) + "\nTotal R$: " + total.toFixed(2));
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculo de Jantar</title>
+    <script>
+        //le entrada. valor do jantar fazendo a convercao de string para numero.
+        var jantar = Number(prompt("Digite o valor do jantar: "));
+
+        //calcula a porcentagem da taxa do garcom. Sendo 10/100=0,10.
+        var taxa = jantar * 0.10;
+
+        //calcula o total (janta + taxa).
+        var total = jantar + taxa;
+
+        //saida do valor da taxa + valor do jantar. toFixed(2) diz que o resultado deve conter 2 casas decimais. \n faz uma quebra de linha.
+        alert("Taxa do Garçom R$: " + taxa.toFixed(2) + "\nJantar R$: " + jantar.toFixed(2) + "\nTotal R$: " + total.toFixed(2));
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,25 @@
+<meta charset="utf-8">
+<title>Exercicio C</title>
+<script>
+    //README: leia o preço de um produto e informe  as opçoes de pagamento da loja. Calcule e informe o valor para pagamento avista com 10% de desconto e o valor em 3x
+
+    //le o preço do produto
+    var precoProduto = Number(prompt("Valor do produto: "));
+    //define a procentagem
+
+    var pagamentoAvista = precoProduto * 0.10;
+
+    //havia trocado a ordem e subitrai pagamentoAvista - preçoProduto e o resultado foi negativo(-)
+    var desconto = precoProduto - pagamentoAvista;
+
+    //adicionei por conta propria. Calcula o valor que foi descontado
+    var vaslorDesconto = precoProduto - desconto;
+
+    //calacula o parcelamento
+    var parcelamento = precoProduto / 3;
+
+    //saida dos calculos mostrando preço, valor com desconte, valor descontado e parcelamento
+    alert("Preço R$: " + precoProduto.toFixed(2) + "\nÀ Vista* R$: " + desconto.toFixed(2) + "\nDesconto de R$: " + vaslorDesconto.toFixed(2) + "\nOu 3x de R$: " + parcelamento.toFixed(2) + "\n*10% de desconto");
+
+
+</script>
